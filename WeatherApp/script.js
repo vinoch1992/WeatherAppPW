@@ -17,7 +17,7 @@ weatherapp.controller('weatherController', function ($scope, $http, $rootScope, 
             $http(
                 {
                     method: 'GET',
-                    url: 'http://weatherapppwapp.azurewebsites.net/api/values?zipcode='+$scope.zipcode,
+                    url: 'https://weatherapppwapp.azurewebsites.net/api/values?zipcode='+$scope.zipcode,
                 }).then(function successCallback(response) {
                     if (response.data == null || response.data == "")
                         alert("Invalid Zip Code!");
